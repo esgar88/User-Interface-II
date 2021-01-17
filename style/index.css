@@ -1,1 +1,71 @@
-/* Add CSS styling here */
+/* <!-- CSS Reset --> */
+
+/* <!-- End CSS Reset --> */
+
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+/* <!-- font-family: 'Potta One', cursive; --> */
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Potta+One&display=swap");
+/* <!-- font-family: 'East Sea Dokdo', cursive; --> */
+
+/* <!-- Entire page --> */
+
+/* <!-- Header area --> */
+
+.header {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: stretch; */
+	align-content: flex-start;
+	/* align-items: center; */
+	background: #9eb1b8;
+	/* border: 2px solid black; */
+	padding: 5px;
+	border-radius: 15px;
+}
+h1,
+h2 {
+	color: #037672;
+	font-family: "Potta One", cursive;
+}
+
+.text1 {
+	/* border: 1px solid black; */
+	background: #055975;
+	color: white;
+	padding: 8px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+/* <!-- ends/Start of profile pic and summary --> */
+
+/* #imagecontainer {
+	background: url ("https://picsum.photos");
+} */
+.summary {
+	display: flex;
+	flex-direction: row;
+	/* align-content: center; */
+	justify-content: center;
+	justify-content: space-between;
+	padding: 200px;
+	background: #d4ff00;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+/* .summaryPart2 
+	display: flex;
+	flex-direction: row; */
+#imagecontainer {
+	background: url ("https://picsum.photos");
+}
+
+button {
+	border-radius: 20px;
+}
+/* <!-- projects I have worked on part 1 --> */
+section {
+	display: flex;
+	flex-direction: row;
+}
+
+/* <!-- projects I have worked on part 2 --> */
