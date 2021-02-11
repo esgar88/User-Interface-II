@@ -1,1 +1,71 @@
 /* Add CSS styling here */
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Karla&display=swap");
+/* font:Hammersmith One
+font 2: Karla */
+
+* {
+	font-family: "Karla";
+	margin-top: 0px;
+	font-size: 62.5%;
+}
+
+header {
+	background: #ececec;
+	font-family: "Hammersmith One";
+	border: 2px solid black;
+	padding-left: 2%;
+	padding-right: 75%;
+	padding-bottom: 1%;
+}
+h1 {
+	font-size: 3.4rem;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	/* margin-left: -10%; */
+}
+
+nav a {
+	border: 2px solid black;
+	background: white;
+	text-decoration: none;
+	font-size: 1.6rem;
+	display: flex;
+	/* justify-content: space-between; */
+	/* margin-left: -0.00005%; */
+}
+
+.profile {
+	border: 2px solid black;
+	display: flex;
+}
+
+.profileImage img {
+	width: 70%;
+}
+
+/* .profileImage {
+	width: 10px;
+	display: flex;
+} */
+
+.profileSummary {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	padding-top: 5%;
+}
+
+.linksRow1 {
+	display: flex;
+}
+.linksRow2 {
+	display: flex;
+}
+.image {
+	background-image: url(https://picsum.photos/seed/picsum/200/200);
+	height: 200px;
+	width: 200px;
+	background-repeat: none;
+}
