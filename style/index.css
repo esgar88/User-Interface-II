@@ -1,24 +1,30 @@
-/* Add CSS styling here */
-@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Karla&display=swap");
-/* font:Hammersmith One
-font 2: Karla */
+/* imports---------------------------------------- */
+
+/* fonts: Hammersmith One, Karla, Hanalei,Indie Flower */
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Hanalei&family=Indie+Flower&family=Karla&display=swap");
+
+/* full page----------------------------------- */
 
 * {
-	font-family: "Karla";
+	font-family: "Indie Flower";
 	margin-top: 0px;
 	font-size: 62.5%;
+	border: 2px solid black;
+	max-width: 100%;
 }
 
+/* header----------------------------------- */
 header {
 	background: #ececec;
-	font-family: "Hammersmith One";
+	font-family: "Hanalei";
 	border: 2px solid black;
 	padding-left: 2%;
 	padding-right: 75%;
 	padding-bottom: 1%;
 }
 h1 {
-	font-size: 3.4rem;
+	font-size: 4.5rem;
+	/* padding: 5%; */
 }
 nav {
 	display: flex;
@@ -35,14 +41,14 @@ nav a {
 	/* justify-content: space-between; */
 	/* margin-left: -0.00005%; */
 }
-
+/*  profile--------------------------------------*/
 .profile {
 	border: 2px solid black;
 	display: flex;
 }
 
 .profileImage img {
-	width: 70%;
+	width: 124%;
 }
 
 /* .profileImage {
@@ -53,19 +59,106 @@ nav a {
 .profileSummary {
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-between; */
-	padding-top: 5%;
+	justify-content: center;
+	align-content: center;
+	padding-left: 35%;
+	/* border: 2px solid purple; */
 }
 
-.linksRow1 {
-	display: flex;
+h2 {
+	font-size: 3.2rem;
 }
+/* links-------------------------------------------- */
+.linksRow1 {
+	padding-top: 2.5%;
+}
+
+.linksRow1,
 .linksRow2 {
 	display: flex;
+	justify-content: space-evenly;
+	justify-content: center;
+	align-content: center;
+	align-content: space-between;
+	/* border: 2px solid green; */
 }
-.image {
-	background-image: url(https://picsum.photos/seed/picsum/200/200);
-	height: 200px;
-	width: 200px;
-	background-repeat: none;
+
+.imagePug img {
+	width: 85%;
+	/* border: 5px solid blue; */
+	/* justify-content: space-evenly; */
+}
+
+/* .linksRowTab {
+	display: flex;
+	flex-direction: column;
+} */
+
+/* footer--------------------------------------------- */
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5%;
+	background: #ececec;
+}
+
+p {
+	font-size: 1.8rem;
+}
+
+button {
+	border-radius: 30%;
+	width: 80px;
+	height: 50px;
+}
+
+/* Tablet-max-width: 800px */
+@media (max-width: 800px) {
+}
+
+/* Phone-max-width: 500px */
+@media (max-width: 500px) {
+	/* * {
+		max-width: 100%;
+	} */
+	header {
+		width: 22%;
+		/* background: greenyellow; */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		/* align-items: center; */
+		border: 2px solid blue;
+	}
+	nav {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.profile {
+		display: flex;
+		flex-direction: column;
+		/* padding-right: 1%; */
+	}
+	.profileSummary {
+		display: flex;
+		align-content: center;
+		/* flex-direction: row; */
+	}
+	header h1 {
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+	nav a {
+		padding: 2%;
+	}
+	button {
+		border-radius: 30%;
+		width: 25%;
+		padding: 5%;
+		/* height: 50px; */
+	}
 }
